@@ -3,6 +3,7 @@ package com.example.demo.factory;
 import com.example.demo.service.ExcelInvoiceImpl;
 import com.example.demo.service.InterInvoiceImpl;
 import com.example.demo.service.PdfInvoiceImpl;
+import com.example.demo.service.WordInvoiceImpl;
 
 public class FactoryInvoiceImpl {
 
@@ -14,6 +15,10 @@ public class FactoryInvoiceImpl {
 		
 		if(type.equals("ExcelImpl"))
 				return new ExcelInvoiceImpl();
+		
+		if(type.equals("WordImpl"))
+		return new WordInvoiceImpl();
+			
 		
 		return null;
 		

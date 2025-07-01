@@ -8,5 +8,6 @@ public interface InterInvoiceImpl {
 	
 	public String printdata();
 	
+	
 	public String Print();
 }
